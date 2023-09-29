@@ -37,6 +37,9 @@ print(mycopy)
 #tuples to są niezmienialne listy
 
 myTuple = tuple(('Dave',42,'True'))
-anotherTuple = (1,2,3,4,5)
+anotherTuple = (1,2,3,4,5,2,3,2,2)
 
 print(anotherTuple)
+(one,two,*hey) = anotherTuple
+print(hey)
+print(anotherTuple.count(2))
